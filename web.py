@@ -5,7 +5,9 @@ import numpy as np
 
 import joblib
 
-saved_model = joblib.load('https://github.com/Olamieee/320-project/blob/main/kc.ipynb')
+saved_model_url = "https://github.com/Olamieee/320-project/raw/main/kc.joblib"
+saved_model = joblib.load(saved_model_url)
+
 
 
 def predict_price(bedrooms,bathrooms,sqft_living,sqft_lot,floors,waterfront,view,condition,grade,sqft_above,sqft_basement,zipcode,yr_old,renovated_status):
