@@ -2,9 +2,10 @@ import streamlit as st
 import numpy as np
 
 # from PIL import Image
+
 import joblib
 
-saved_model = joblib.load('C:/Users/Ola/Desktop/320 project/model/KcHouse.joblib')
+saved_model = joblib.load('https://github.com/Olamieee/320-project/blob/main/kc.ipynb')
 
 
 def predict_price(bedrooms,bathrooms,sqft_living,sqft_lot,floors,waterfront,view,condition,grade,sqft_above,sqft_basement,zipcode,yr_old,renovated_status):
